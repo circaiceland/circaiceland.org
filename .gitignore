@@ -1,0 +1,9 @@
+# OS / sync junk
+desktop.ini
+**/desktop.ini
+.DS_Store
+Thumbs.db
+
+# Editor / tooling
+.claude/
+node_modules/

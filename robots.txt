@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://circaiceland.org/sitemap.xml
