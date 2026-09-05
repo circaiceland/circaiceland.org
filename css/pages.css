@@ -102,6 +102,16 @@
 .map-embed { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--line); margin: 20px 0; background: var(--sand); }
 .map-embed iframe { width: 100%; height: clamp(340px, 56vh, 480px); border: 0; display: block; }
 
+/* ---------- Workshops grid (full-width on sub-page) ---------- */
+.workshops { margin-top: clamp(30px, 5vw, 56px); }
+.workshops > h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); margin-bottom: 10px; }
+.workshops .ws-intro { color: var(--muted); max-width: 64ch; margin-bottom: 30px; font-size: 1.02rem; }
+.workshops .project-grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.workshops .card-media { aspect-ratio: 4/3; }
+.workshops .card-body { padding: 20px 22px 22px; }
+.workshops .card-body h3 { font-size: 1.12rem; }
+.workshops .card-meta { flex-wrap: wrap; }
+
 .resources { list-style: none; padding: 0; display: grid; gap: 12px; margin: 10px 0; }
 .resources a {
   display: flex; align-items: center; gap: 15px; padding: 15px 20px; background: var(--paper); border: 1px solid var(--line);
