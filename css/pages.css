@@ -70,6 +70,10 @@
 .proj-cover { margin-top: clamp(28px, 4vw, 44px); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); position: relative; }
 .proj-cover img { width: 100%; aspect-ratio: 21/9; object-fit: cover; }
 .proj-cover .card-credit { font-size: .7rem; }
+/* Poster-style card thumbnail: show the whole artwork, no cropping */
+.card-media.poster { background: #bcd7ea; }
+.card-media.poster img { object-fit: contain; }
+
 .proj-cover.branded { aspect-ratio: 21/9; background: linear-gradient(140deg, #1d3b26, #2f6a32 70%, #3f8b42); display: grid; place-items: center; }
 .proj-cover.branded img { width: auto; height: 58%; aspect-ratio: auto; object-fit: contain; background: #fff; padding: 16px 18px; border-radius: 16px; box-shadow: 0 14px 34px -12px rgba(0,0,0,.5); }
 
