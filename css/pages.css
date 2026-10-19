@@ -108,6 +108,33 @@
 .map-embed { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--line); margin: 20px 0; background: var(--sand); }
 .map-embed iframe { width: 100%; height: clamp(340px, 56vh, 480px); border: 0; display: block; }
 
+/* ---------- Project outputs / downloads ---------- */
+.outputs { margin-top: clamp(34px, 5vw, 60px); }
+.outputs > h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); margin-bottom: 10px; }
+.outputs .ws-intro { color: var(--muted); max-width: 64ch; margin-bottom: 28px; font-size: 1.02rem; }
+.dl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 18px; list-style: none; padding: 0; margin: 0; }
+.dl-card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 24px 22px; display: flex; flex-direction: column; transition: box-shadow .25s, border-color .25s; }
+.dl-card:hover { box-shadow: var(--shadow); border-color: transparent; }
+.dl-top { display: flex; gap: 14px; align-items: flex-start; }
+.dl-ico { width: 46px; height: 46px; flex: none; border-radius: 13px; display: grid; place-items: center; background: rgba(139,195,74,.18); color: var(--green-700); }
+.dl-ico svg { width: 23px; height: 23px; }
+.dl-card h3 { font-size: 1.1rem; margin-bottom: 5px; }
+.dl-meta { font-size: .78rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--earth); }
+.dl-card > p { font-size: .95rem; color: var(--muted); flex: 1; margin: 14px 0 18px; }
+.dl-files { display: flex; flex-wrap: wrap; gap: 9px; }
+.dl-files a {
+  display: inline-flex; flex-direction: column; gap: 1px; padding: 9px 15px; border: 1.5px solid var(--line);
+  border-radius: 12px; font-weight: 700; font-size: .92rem; color: var(--forest); transition: .2s; text-decoration: none;
+}
+.dl-files a:hover { border-color: var(--green); background: rgba(139,195,74,.12); color: var(--green-700); }
+.dl-files a small { font-weight: 500; font-size: .75rem; color: var(--muted); letter-spacing: .02em; }
+.dl-files a:hover small { color: var(--green-700); }
+.dl-note { margin-top: 22px; font-size: .88rem; color: var(--muted); display: flex; gap: 12px; align-items: flex-start; }
+.dl-note svg { width: 18px; height: 18px; flex: none; color: var(--green); margin-top: 2px; }
+
+/* Visible keyboard focus everywhere (accessibility) */
+a:focus-visible, button:focus-visible { outline: 3px solid var(--green); outline-offset: 2px; border-radius: 4px; }
+
 /* ---------- Workshops grid (full-width on sub-page) ---------- */
 .workshops { margin-top: clamp(30px, 5vw, 56px); }
 .workshops > h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); margin-bottom: 10px; }
