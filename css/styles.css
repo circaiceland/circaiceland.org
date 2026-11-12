@@ -101,12 +101,12 @@ section { scroll-margin-top: 80px; }
 .hero { position: relative; min-height: 92vh; display: flex; align-items: center; color: #fff; overflow: hidden; }
 .hero::before {
   content: ""; position: absolute; inset: 0;
-  background: url("../assets/hero.webp") center 40%/cover no-repeat;
+  background: url("../assets/hero-rainbow.webp") center 45%/cover no-repeat;
   transform: scale(1.04);
 }
 .hero::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(105deg, rgba(11,26,15,.86) 0%, rgba(15,35,20,.66) 42%, rgba(18,40,24,.28) 100%);
+  background: linear-gradient(105deg, rgba(8,18,14,.86) 0%, rgba(12,26,19,.58) 38%, rgba(14,28,20,.12) 100%);
 }
 .hero .wrap { position: relative; z-index: 2; padding-top: 96px; padding-bottom: 72px; }
 .hero-badge {
@@ -313,6 +313,8 @@ section { scroll-margin-top: 80px; }
   .nav-links a { padding: 13px 14px; border-radius: var(--radius-sm); }
   .nav-links .btn { margin: 6px 0 0; justify-content: center; }
   .hero { min-height: auto; padding: 40px 0; }
+  /* shift the crop right so the rainbow stays in frame on phones */
+  .hero::before { background-position: 64% 45%; }
   .hero-stats { gap: 28px; }
   .footer-grid { grid-template-columns: 1fr; gap: 30px; }
 }
