@@ -74,6 +74,10 @@
 .card-media.poster { background: #bcd7ea; }
 .card-media.poster img { object-fit: contain; }
 
+/* Screenshot cover: show the whole frame instead of cropping it to 21:9 */
+.proj-cover.shot { background: #2f5e35; display: grid; place-items: center; }
+.proj-cover.shot img { aspect-ratio: auto; object-fit: contain; width: auto; max-width: 100%; max-height: 470px; }
+
 .proj-cover.branded { aspect-ratio: 21/9; background: linear-gradient(140deg, #1d3b26, #2f6a32 70%, #3f8b42); display: grid; place-items: center; }
 .proj-cover.branded img { width: auto; height: 58%; aspect-ratio: auto; object-fit: contain; background: #fff; padding: 16px 18px; border-radius: 16px; box-shadow: 0 14px 34px -12px rgba(0,0,0,.5); }
 

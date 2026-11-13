@@ -19,17 +19,31 @@ footprint, covering transport, packing, food, accommodation and the everyday dec
 quietly add up. It comes with a short **cheat sheet**: a pocket checklist for before you go,
 while you are away, and once you are home.
 
-Alongside it are the two methodologies, both written so that another organisation can pick
-them up and run them:
+- Sustainable Travel Guide —
+  [English](/assets/docs/travel-guide-en.pdf) (3.1 MB) ·
+  [Íslenska](/assets/docs/travel-guide-is.pdf) (3.2 MB) ·
+  [Slovenčina](/assets/docs/travel-guide-sk.pdf) (3.0 MB)
+- [Sustainable Travel Cheat Sheet](/assets/docs/travel-cheat-sheet-en.pdf) — English (2.7 MB)
 
-- The **Training Methodology** documents the training course itself — sessions like Emotional
-  Awareness While Traveling, Pack Smart, The Ripple Effect and The Council of All Beings, with
-  timings, materials and facilitation notes.
-- The **Workshop Methodology** covers the eleven community workshops, from repair cafés and
-  clothing swaps to ocean therapy, plogging and mapping local green spaces.
+Alongside it are the two methodologies, both written so that another organisation can pick
+them up and run them. The **Training Methodology** documents the training course itself —
+sessions like Emotional Awareness While Traveling, Pack Smart, The Ripple Effect and The
+Council of All Beings, with timings, materials and facilitation notes. The **Workshop
+Methodology** covers the eleven community workshops, from repair cafés and clothing swaps to
+ocean therapy, plogging and mapping local green spaces.
+
+- Training Methodology —
+  [English](/assets/docs/training-methodology-en.pdf) (4.4 MB) ·
+  [Íslenska](/assets/docs/training-methodology-is.pdf) (4.4 MB) ·
+  [Slovenčina](/assets/docs/training-methodology-sk.pdf) (4.5 MB)
+- [Workshop Methodology](/assets/docs/workshop-methodology-en.pdf) — English (30.5 MB)
 
 Finally, there is a set of ten **comic posters**, ready to print at A4 or A3 for a classroom,
 an office or a community space.
+
+- Comic Posters —
+  [A4](/assets/docs/comic-posters-a4-en.pdf) (3.4 MB) ·
+  [A3](/assets/docs/comic-posters-a3-en.pdf) (5.2 MB)
 
 ## Why we are giving it all away
 

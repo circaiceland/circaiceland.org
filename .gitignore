@@ -7,3 +7,6 @@ Thumbs.db
 # Editor / tooling
 .claude/
 node_modules/
+
+# Local render previews (not part of the site)
+preview-*.html
