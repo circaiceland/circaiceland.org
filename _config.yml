@@ -1,0 +1,35 @@
+# Circa Iceland — Jekyll config
+# Only the blog is built by Jekyll. Existing pages (index.html, projects/*.html)
+# have no front matter, so Jekyll copies them through untouched.
+
+title: Circa Iceland
+description: >-
+  A grassroots non-profit weaving environmental and social sustainability
+  into everyday life in Iceland.
+url: "https://circaiceland.org"
+lang: en
+
+# Clean post URLs: /blog/my-post-title/
+permalink: /blog/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+# RSS feed at /feed.xml
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

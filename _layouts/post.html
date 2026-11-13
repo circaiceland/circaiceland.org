@@ -1,0 +1,74 @@
+---
+layout: default
+---
+<article class="post">
+
+  <section class="proj-hero">
+    <div class="wrap">
+      <a class="breadcrumb" href="/blog/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+        All posts
+      </a>
+
+      {% if page.tags.size > 0 or page.type == 'open-call' %}
+      <div class="tagrow">
+        {% if page.type == 'open-call' %}<span class="tag-call">Open call</span>{% endif %}
+        {% for t in page.tags %}<span>{{ t }}</span>{% endfor %}
+      </div>
+      {% endif %}
+
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+
+      <p class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+        {% if page.author %} · <span>{{ page.author }}</span>{% endif %}
+      </p>
+
+      {% if page.image %}
+      <div class="proj-cover">
+        <img src="{{ page.image }}" alt="{{ page.image_alt | default: page.title }}" />
+        {% if page.image_credit %}<span class="card-credit">{{ page.image_credit }}</span>{% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="wrap">
+    {% if page.type == 'open-call' %}
+    <aside class="call-box" aria-label="Open call details">
+      <div>
+        <h2>How to apply</h2>
+        {% if page.deadline %}<p><strong>Deadline:</strong> {{ page.deadline | date: "%-d %B %Y" }}</p>{% endif %}
+        {% if page.who %}<p><strong>Who can apply:</strong> {{ page.who }}</p>{% endif %}
+      </div>
+      {% if page.apply_url %}
+      <a class="btn btn-primary" href="{{ page.apply_url }}">
+        Apply now
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      {% endif %}
+    </aside>
+    {% endif %}
+
+    <div class="proj-body post-body">
+      {{ content }}
+    </div>
+
+    <div class="proj-next">
+      <span class="eyebrow">Keep reading</span>
+      <div class="next-grid">
+        {% assign others = site.posts | where_exp: "p", "p.url != page.url" | slice: 0, 3 %}
+        {% for p in others %}
+        <a class="next-card" href="{{ p.url }}">
+          <span>{{ p.date | date: "%-d %b %Y" }}</span>
+          <b>{{ p.title }}</b>
+          <span class="go">Read post →</span>
+        </a>
+        {% endfor %}
+        <a class="next-card" href="/blog/"><span>Blog</span><b>All posts</b><span class="go">Browse →</span></a>
+      </div>
+    </div>
+  </section>
+
+</article>

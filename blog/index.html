@@ -1,0 +1,51 @@
+---
+layout: default
+title: Blog
+description: News, open calls and reflections from Circa — a grassroots non-profit for environmental and social sustainability in Iceland.
+---
+
+<section class="proj-hero blog-hero">
+  <div class="wrap">
+    <span class="eyebrow">Circa journal</span>
+    <h1>News, open calls &amp; reflections</h1>
+    <p class="lead">What we are working on, who we are looking for, and what we are learning along
+      the way — from workshops in Iceland to partnerships across Europe.</p>
+  </div>
+</section>
+
+<section class="wrap blog-list">
+  {% if site.posts.size == 0 %}
+    <p class="ws-intro">No posts yet — the first one is on its way.</p>
+  {% else %}
+  <div class="project-grid">
+    {% for post in site.posts %}
+    <article class="card">
+      <div class="card-media{% unless post.image %} branded{% endunless %}">
+        {% if post.type == 'open-call' %}<span class="card-tag">Open call</span>{% endif %}
+        <img src="{{ post.image | default: '/assets/logo.png' }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy" />
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="yr">{{ post.date | date: "%-d %b %Y" }}</span>
+          {% if post.tags.size > 0 %} · <span>{{ post.tags | join: ', ' }}</span>{% endif %}
+        </div>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.description | default: post.excerpt | strip_html | truncate: 170 }}</p>
+        {% if post.type == 'open-call' and post.deadline %}
+        <div class="card-foot"><span class="chip">Apply by {{ post.deadline | date: "%-d %b %Y" }}</span></div>
+        {% endif %}
+        <a class="card-link" href="{{ post.url }}">
+          Read post
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <p class="dl-note">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"/><circle cx="5.5" cy="18.5" r="1.6"/></svg>
+    <span>Prefer a reader? Subscribe to the <a href="/feed.xml">RSS feed</a> to get new posts automatically.</span>
+  </p>
+</section>

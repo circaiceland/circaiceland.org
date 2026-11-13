@@ -108,6 +108,39 @@
 .map-embed { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--line); margin: 20px 0; background: var(--sand); }
 .map-embed iframe { width: 100%; height: clamp(340px, 56vh, 480px); border: 0; display: block; }
 
+/* ---------- Blog ---------- */
+.blog-hero .eyebrow { margin-bottom: 14px; }
+.blog-hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); max-width: 18ch; margin-bottom: 18px; }
+.blog-list { padding-bottom: clamp(50px, 7vw, 90px); }
+.blog-list .card-body h3 a { color: var(--forest); }
+.blog-list .card:hover .card-body h3 a { color: var(--green-700); }
+.post-meta { font-size: .92rem; color: var(--muted); font-weight: 600; margin-top: 16px; }
+.tag-call { background: var(--green) !important; color: #fff !important; }
+
+/* open-call callout */
+.call-box {
+  display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between;
+  background: var(--sand); border: 1px solid var(--line); border-left: 4px solid var(--green);
+  border-radius: var(--radius); padding: 24px 26px; margin: clamp(26px, 4vw, 40px) 0 6px; max-width: 780px;
+}
+.call-box h2 { font-size: 1.2rem; margin: 0 0 8px; }
+.call-box p { margin: 0 0 4px; color: var(--ink); font-size: .96rem; }
+
+/* post body (markdown output) */
+.post-body > h2 { font-size: clamp(1.4rem, 2.8vw, 1.8rem); margin: clamp(30px, 4vw, 44px) 0 14px; }
+.post-body > h3 { font-size: 1.15rem; margin: 28px 0 10px; }
+.post-body > p { font-size: 1.02rem; line-height: 1.72; }
+.post-body ul, .post-body ol { margin: 4px 0 18px; padding-left: 22px; color: var(--ink); }
+.post-body li { margin-bottom: 9px; line-height: 1.65; }
+.post-body a { text-decoration: underline; text-underline-offset: 3px; }
+.post-body img { border-radius: var(--radius-sm); box-shadow: var(--shadow); margin: 20px 0; }
+.post-body blockquote {
+  margin: 22px 0; padding: 14px 22px; border-left: 3px solid var(--leaf);
+  background: var(--sand); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; color: var(--muted);
+}
+.post-body hr { border: 0; border-top: 1px solid var(--line); margin: 34px 0 22px; }
+.post-body em { color: var(--muted); }
+
 /* ---------- Project outputs / downloads ---------- */
 .outputs { margin-top: clamp(34px, 5vw, 60px); }
 .outputs > h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); margin-bottom: 10px; }
